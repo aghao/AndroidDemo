@@ -11,6 +11,14 @@
         android:layout_height="wrap_content"
         android:text="x坐标：     y坐标：" />
 
+
+    <ImageView
+        android:id="@+id/imggirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/girl" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"
@@ -23,5 +31,4 @@
             android:layout_gravity="center"
             android:src="@mipmap/boy" />
     </FrameLayout>
-
 </RelativeLayout>
