@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".activity.ScrollActivity">
 
+    <TextView
+        android:id="@+id/tvCord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x坐标：     y坐标：" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"
