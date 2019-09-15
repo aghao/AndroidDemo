@@ -12,19 +12,12 @@
         android:text="x坐标：     y坐标：" />
 
 
-    <ImageView
-        android:id="@+id/imggirl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/girl" />
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:layout_centerInParent="true"
         android:background="#D3D3D3" >
-        <ImageView
+        <com.aghao.app.view.MyImageView
             android:id="@+id/imgboy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

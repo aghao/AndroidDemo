@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aghao.app.R;
+import com.aghao.app.view.MyImageView;
 
 public class ScrollActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class ScrollActivity extends AppCompatActivity {
     TextView tvCord;
     Scroller myScroller;
     GestureDetector myGestureDetector;
-    ImageView imgBoy, imgGirl;
+    MyImageView imgBoy;
 
     private int oldX, oldY;
 
@@ -31,32 +32,6 @@ public class ScrollActivity extends AppCompatActivity {
 
         tvCord = findViewById(R.id.tvCord);
         imgBoy = findViewById(R.id.imgboy);
-        imgGirl = findViewById(R.id.imggirl);
-        imgBoy.setOnTouchListener(imgOnTouchListener);
     }
-
-    View.OnTouchListener imgOnTouchListener = new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            switch (event.getAction()) {
-                case MotionEvent.ACTION_UP:
-                    v.performClick();
-                    break;
-                case MotionEvent.ACTION_DOWN:
-                    Log.i(TAG, "ACTION_DOWN");
-                    oldX = (int) event.getX();
-                    oldY = (int) event.getY();
-                    break;
-                case MotionEvent.ACTION_MOVE:
-                    tvCord.setText("x坐标："+event.getX()+"|"+"y坐标："+event.getY());
-                    int dx = (int)event.getX() - oldX;
-                    int dy = (int)event.getY() - oldY;
-                    // getParent方法会获得父View，但会使父View中所有View滑动
-                    ((View)v.getParent()).scrollBy(-dx, -dy);
-                    break;
-            }
-            return true;
-        }
-    };
 
 }
