@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.aghao.app.R;
 
+/**
+ * View事件分发Activity
+ */
 public class ViewTouchActivity extends AppCompatActivity {
 
     @Override
