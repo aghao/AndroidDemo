@@ -16,5 +16,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="View事件分发"/>
+    <Button
+        android:id="@+id/btnSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开SecondActivity"/>
+    <Button
+        android:id="@+id/btnCirlceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义View简单的CircleView"/>
 
 </LinearLayout>

@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".activity.ScrollActivity">
 
+    <Button
+        android:id="@+id/btninter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:text="View滑动冲突解决" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"

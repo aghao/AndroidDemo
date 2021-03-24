@@ -13,8 +13,6 @@ public class MyFrameLayout extends FrameLayout {
     }
 
     public MyFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
-
-
         super(context, attrs);
     }
 }
