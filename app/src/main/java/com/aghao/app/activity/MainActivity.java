@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btnViewTouch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, ViewTouchActivity.class);
+                startActivity(intent);
             }
         });
 
