@@ -26,5 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="自定义View简单的CircleView"/>
+    <Button
+        android:id="@+id/btnShowImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageLoader显示图片"/>
 
 </LinearLayout>
